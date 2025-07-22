@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TimeTracker } from './time-tracker';
+import { TimeTracker } from './time-tracker.component';
 
 describe('TimeTracker', () => {
   let component: TimeTracker;

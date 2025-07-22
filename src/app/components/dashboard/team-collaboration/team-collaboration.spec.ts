@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TeamCollaboration } from './team-collaboration';
+import { TeamCollaboration } from './team-collaboration.component';
 
 describe('TeamCollaboration', () => {
   let component: TeamCollaboration;
