@@ -1,0 +1,27 @@
+<div class="dashboard">
+  <div class="header">
+    <h1>Dashboard</h1>
+    <p>Plan, prioritize, and accomplish your tasks with ease.</p>
+    <div class="actions">
+      <button mat-raised-button color="primary">+ Add Project</button>
+      <button mat-stroked-button>Import Data</button>
+    </div>
+  </div>
+  <div class="stats-row">
+    <app-stats-cards></app-stats-cards>
+  </div>
+  <div class="main-row">
+    <div class="left">
+      <app-analytics></app-analytics>
+      <app-team-collaboration></app-team-collaboration>
+    </div>
+    <div class="center">
+      <app-reminders></app-reminders>
+      <app-project-progress></app-project-progress>
+    </div>
+    <div class="right">
+      <app-project-list></app-project-list>
+      <app-time-tracker></app-time-tracker>
+    </div>
+  </div>
+</div>

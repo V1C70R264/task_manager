@@ -1,0 +1,37 @@
+.sidenav-container {
+  width: 250px;
+  background: #fff;
+  box-shadow: 2px 0 8px #e0e0e0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 24px 16px 16px 16px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1a3c34;
+  img {
+    width: 32px;
+    margin-right: 12px;
+  }
+}
+mat-list-item {
+  height: 48px;
+  font-size: 1.1rem;
+  .mat-icon {
+    margin-right: 16px;
+    color: #1a3c34;
+  }
+  .badge {
+    background: #1a8f5b;
+    color: #fff;
+    border-radius: 12px;
+    padding: 2px 8px;
+    font-size: 0.8rem;
+    margin-left: auto;
+  }
+}
+.general {
+  margin-top: 32px;
+  border-top: 1px solid #e0e0e0;
+}

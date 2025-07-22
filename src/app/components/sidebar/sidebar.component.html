@@ -1,0 +1,23 @@
+<mat-sidenav-container class="sidenav-container" [hasBackdrop]="false">
+  <mat-sidenav mode="side" opened class="sidenav">
+    <div class="logo">
+      <img src="assets/images/logo.svg" alt="Donezo" />
+      <span>Donezo</span>
+    </div>
+    <mat-nav-list>
+      <mat-list-item *ngFor="let item of menuItems">
+        <mat-icon>{{item.icon}}</mat-icon>
+        <span>{{item.label}}</span>
+        <span *ngIf="item.badge" class="badge">{{item.badge}}</span>
+      </mat-list-item>
+    </mat-nav-list>
+    <div class="general">
+      <mat-nav-list>
+        <mat-list-item *ngFor="let item of generalItems">
+          <mat-icon>{{item.icon}}</mat-icon>
+          <span>{{item.label}}</span>
+        </mat-list-item>
+      </mat-nav-list>
+    </div>
+  </mat-sidenav>
+</mat-sidenav-container>
