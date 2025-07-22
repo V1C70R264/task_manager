@@ -3,7 +3,7 @@
     <h1>Dashboard</h1>
     <p>Plan, prioritize, and accomplish your tasks with ease.</p>
     <div class="actions">
-      <button mat-raised-button color="primary">+ Add Project</button>
+      <button mat-raised-button color="primary" (click)="openAddProjectModal()">+ Add Project</button>
       <button mat-stroked-button>Import Data</button>
     </div>
   </div>
@@ -23,5 +23,15 @@
       <app-project-list></app-project-list>
       <app-time-tracker></app-time-tracker>
     </div>
+  </div>
+
+  <!-- Show tasks -->
+  <div class="task-list">
+    <h3>Tasks</h3>
+    <ul>
+      <li *ngFor="let task of tasks">
+        <strong>{{ task.title }}</strong> — Due: {{ task.dueDate | date }}
+      </li>
+    </ul>
   </div>
 </div>

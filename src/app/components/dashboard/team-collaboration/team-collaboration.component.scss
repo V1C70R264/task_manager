@@ -1,0 +1,16 @@
+.team-card {
+  height: 100%;
+}
+
+mat-list-item {
+  .mat-list-item-content {
+    align-items: center;
+  }
+}
+
+img[matListItemAvatar] {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
